@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.studentportal2.HelloController">
+    <children>
+        <ImageView fitHeight="421.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@aast (1)-logo.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="courseEnrollmentLabel" layoutX="129.0" layoutY="33.0" prefHeight="22.0" prefWidth="164.0" text="Course Enrollment" textFill="#d7a91e">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="courseCodeLabel" layoutX="73.0" layoutY="161.0" prefHeight="22.0" prefWidth="164.0" text="Enter Course Code:" textFill="#d7a91e">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="courseCodeField" layoutX="228.0" layoutY="160.0" prefHeight="25.0" prefWidth="120.0" />
+        <Button fx:id="registerButton" layoutX="89.0" layoutY="233.0" mnemonicParsing="false" onAction="#Enroll" prefHeight="33.0" prefWidth="120.0" text="Enroll" />
+        <Button fx:id="unenrollButton" layoutX="228.0" layoutY="233.0" mnemonicParsing="false" onAction="#Unenroll" prefHeight="33.0" prefWidth="120.0" text="Unenroll" />
+        <Button fx:id="backButton" layoutX="25.0" layoutY="367.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="25.0" prefWidth="71.0" text="Back" />
+    </children>
+</AnchorPane>

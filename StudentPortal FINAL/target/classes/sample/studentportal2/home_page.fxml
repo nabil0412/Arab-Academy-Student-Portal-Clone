@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.studentportal2.HelloController">
+    <children>
+        <ImageView fitHeight="421.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@aast (1)-logo.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="WelcomeLabel" layoutX="103.0" layoutY="38.0" prefHeight="22.0" prefWidth="215.0" text="Welcome to Homepage" textFill="#d7a91e">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="registerDropButton" layoutX="99.0" layoutY="165.0" mnemonicParsing="false" onAction="#switchToRegistration" prefHeight="44.0" prefWidth="224.0" text=" Register/Drop Course" />
+        <Button fx:id="viewProfileButton" layoutX="235.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="25.0" prefWidth="147.0" text="View Profile" />
+        <Button fx:id="requestServerButton" layoutX="99.0" layoutY="221.0" mnemonicParsing="false" onAction="#switchToServices" prefHeight="44.0" prefWidth="224.0" text="Request Service" />
+        <Button fx:id="availableBooksButton" layoutX="99.0" layoutY="277.0" mnemonicParsing="false" onAction="#switchToBooks" prefHeight="44.0" prefWidth="224.0" text="Available Books" />
+        <Button fx:id="viewRegisteredButton" layoutX="99.0" layoutY="106.0" mnemonicParsing="false" onAction="#switchToCourseList" prefHeight="44.0" prefWidth="224.0" text="View Registered Courses" />
+        <Button fx:id="logOutButton" layoutX="30.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToStarting" prefHeight="25.0" prefWidth="147.0" text="Log Out" />
+    </children>
+</AnchorPane>
